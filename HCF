@@ -1,0 +1,26 @@
+// Write a C++ program to calculate HCF of two numbers.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a, b, value;
+    cout << "enter 1st number: ";
+    cin >> a;
+    cout << "enter 2nd number: ";
+    cin >> b;
+    if(a >= b)
+    {
+        value = a;
+    }
+    else {
+        value = b;
+    }
+    while(1)
+    {
+        if(0 == a % value && 0 == b % value)    {
+            cout << value ;
+            break;
+        }
+        value--;
+    }
+}
